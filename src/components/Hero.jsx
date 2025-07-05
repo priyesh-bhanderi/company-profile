@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="absolute bottom-0 left-1/4 w-96 h-32 bg-blue-100/30 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-32 bg-purple-100/30 rounded-full filter blur-3xl"></div>
 
-        <div className="flex flex-wrap items-center -mx-4">
+        <div className="flex flex-wrap items-center mx-4">
           <div className="w-full lg:w-1/2 px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const Hero = () => {
               transition={{ duration: 0.6 }}
               className="max-w-xl mb-12 lg:mb-0"
             >
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
@@ -36,7 +36,7 @@ const Hero = () => {
               >
                 <Star className="w-4 h-4 mr-2" />
                 Trusted by 500+ companies worldwide
-              </motion.div>
+              </motion.div> */}
 
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -74,30 +74,6 @@ const Hero = () => {
                 We help companies achieve their goals through cutting-edge
                 technology and creative excellence.
               </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="flex flex-wrap gap-4"
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05, backgroundColor: "#2563eb" }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-blue-600 text-white rounded-full transition-all duration-300 font-medium inline-flex items-center shadow-lg hover:shadow-blue-500/50"
-                >
-                  Get Started
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05, backgroundColor: "#f8fafc" }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white text-gray-900 rounded-full transition-all duration-300 font-medium border-2 border-gray-200 inline-flex items-center shadow-lg hover:shadow-gray-200/50"
-                >
-                  <Play className="mr-2 h-5 w-5" />
-                  Watch Demo
-                </motion.button>
-              </motion.div>
             </motion.div>
           </div>
 

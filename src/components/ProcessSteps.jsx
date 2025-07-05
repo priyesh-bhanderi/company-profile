@@ -42,7 +42,7 @@ const ProcessSteps = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-full filter blur-3xl opacity-30"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-purple-50 rounded-full filter blur-3xl opacity-30"></div>

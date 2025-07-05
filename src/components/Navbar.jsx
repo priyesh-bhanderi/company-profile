@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -67,7 +67,7 @@ const Navbar = () => {
             >
               Get Started
             </motion.button>
-          </div>
+          </div> */}
 
           <div className="md:hidden">
             <button
