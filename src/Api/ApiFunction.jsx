@@ -15,5 +15,16 @@ export const apiFunctions = () => {
         }
     };
 
-    return { apiGet };
+    const apiPost = async (url, payload) => {
+        try {
+            const response = await axios.post(url, payload);
+            return response.data;
+        } catch (error) {
+            throw error;
+        } finally {
+            await delay(2000);
+        }
+    };
+
+    return { apiGet, apiPost };
 };

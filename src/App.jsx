@@ -1,41 +1,17 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import ScrollProgress from "./components/ScrollProgress";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import ProcessSteps from "./components/ProcessSteps";
-import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
-// import Pricing from "./components/Pricing";
-import Stats from "./components/Stats";
-import Technologies from "./components/Technologies";
-import FAQs from "./components/FAQs";
-import Contact from "./components/Contact";
-import CTABanner from "./components/CTABanner";
-import FloatingCTA from "./components/FloatingCTA";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import Home from "./Home";
+import AddProject from "./Admin/components/addProject";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <ScrollProgress />
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <ProcessSteps />
-      <Stats />
-      <Portfolio />
-      <Technologies />
-      <Testimonials />
-      {/* <Pricing /> */}
-      <CTABanner />
-      <FAQs />
-      <Contact />
-      <Footer />
-      <FloatingCTA />
-    </div>
+    <BrowserRouter>
+      <ToastContainer position="top-right" autoClose={3000} />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/admin/add-project" element={<AddProject />}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
