@@ -9,11 +9,31 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from '../assets/Logo.jpg'
+import { apiFunctions } from "../Api/ApiFunction";
+import API from "../Api/Apis";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProjects, setFilteredProjects] = useState([]);
+  const [project, setProject] = useState([])
+  const { apiGet } = apiFunctions()
+  const { getProjectList } = API
+
+  useEffect(() => {
+    const getList = async () => {
+      try {
+        const response = await apiGet(getProjectList);
+        if (response) {
+          setProject(response?.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch project list:", error);
+      }
+    };
+
+    getList();
+  }, []);
 
   const categories = [
     "All",
@@ -101,11 +121,10 @@ const Portfolio = () => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       onClick={() => setActiveFilter(category)}
-      className={`rounded-full px-6 py-2 text-sm font-medium transition-colors duration-300 ${
-        activeFilter === category
-          ? "bg-blue-600 text-white shadow-md"
-          : "bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900"
-      } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
+      className={`rounded-full px-6 py-2 text-sm font-medium transition-colors duration-300 ${activeFilter === category
+        ? "bg-blue-600 text-white shadow-md"
+        : "bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+        } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
     >
       {category}
     </motion.button>
