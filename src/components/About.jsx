@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Users, Zap, Shield, Trophy } from "lucide-react";
+import about from '../assets/About.jpg'
 
 const About = () => {
   const stats = [
@@ -62,7 +63,7 @@ const About = () => {
               {/* Image with single blue background */}
               <div className="absolute inset-0 bg-blue-600 transform rotate-3 rounded-2xl"></div>
               <img
-                src="/src/assets/About.jpg"
+                src={about}
                 alt="About Us"
                 className="relative rounded-2xl shadow-xl"
               />

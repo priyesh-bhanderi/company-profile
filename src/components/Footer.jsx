@@ -10,6 +10,7 @@ import {
   ExternalLink,
   ArrowUp,
 } from "lucide-react";
+import logo from '../assets/Logo.jpg'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -58,7 +59,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img
-              src="/api/placeholder/120/40"
+              src={logo}
               alt="Logo"
               className="h-10 w-auto mb-6"
             />

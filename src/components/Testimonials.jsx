@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import people from '../assets/People.jpg'
 
 const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
       role: "CEO, TechStart",
-      image: "/src/assets/People.jpg",
+      image: people,
       content:
         "Working with this team was a game-changer for our business. The website they built exceeded our expectations and helped us increase our online sales by 200%.",
       rating: 5,
@@ -15,7 +16,7 @@ const Testimonials = () => {
     {
       name: "Michael Chen",
       role: "Founder, GrowthLabs",
-      image: "/src/assets/People.jpg",
+      image: people,
       content:
         "The attention to detail and professional approach made all the difference. Our new website has significantly improved our user engagement.",
       rating: 5,
@@ -24,7 +25,7 @@ const Testimonials = () => {
     {
       name: "Emily Davis",
       role: "Marketing Director, InnovateCo",
-      image: "/src/assets/People.jpg",
+      image: people,
       content:
         "The team delivered an outstanding website that perfectly represents our brand. Their support even after launch has been exceptional.",
       rating: 5,

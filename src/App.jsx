@@ -7,7 +7,7 @@ import Services from "./components/Services";
 import ProcessSteps from "./components/ProcessSteps";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
+// import Pricing from "./components/Pricing";
 import Stats from "./components/Stats";
 import Technologies from "./components/Technologies";
 import FAQs from "./components/FAQs";

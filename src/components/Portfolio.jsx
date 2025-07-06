@@ -8,6 +8,7 @@ import {
   Search,
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import logo from '../assets/Logo.jpg'
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -25,7 +26,7 @@ const Portfolio = () => {
     {
       title: "E-Commerce Platform",
       category: "Web Development",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Modern e-commerce solution with advanced features",
       icon: Code,
       tools: ["React", "Node.js", "MongoDB"],
@@ -34,7 +35,7 @@ const Portfolio = () => {
     {
       title: "Mobile Banking App",
       category: "Mobile Development",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Secure and user-friendly banking application",
       icon: Smartphone,
       tools: ["React Native", "Firebase", "Redux"],
@@ -43,7 +44,7 @@ const Portfolio = () => {
     {
       title: "Corporate Website",
       category: "Web Development",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Professional website with custom CMS",
       icon: Code,
       tools: ["Next.js", "Tailwind CSS", "Strapi"],
@@ -52,7 +53,7 @@ const Portfolio = () => {
     {
       title: "Social Media Dashboard",
       category: "UI/UX Design",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Analytics and management platform",
       icon: Palette,
       tools: ["Figma", "Adobe XD", "Sketch"],
@@ -61,7 +62,7 @@ const Portfolio = () => {
     {
       title: "Delivery Tracking System",
       category: "Web Development",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Real-time tracking and management system",
       icon: Code,
       tools: ["Vue.js", "Express", "PostgreSQL"],
@@ -70,7 +71,7 @@ const Portfolio = () => {
     {
       title: "Educational Platform",
       category: "Web Development",
-      image: "/src/assets/Logo.jpg",
+      image: logo,
       description: "Online learning management system",
       icon: Code,
       tools: ["Django", "React", "AWS"],

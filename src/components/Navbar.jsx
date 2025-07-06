@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from '../assets/Logo.jpg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
             >
               <img
                 className="h-10 w-auto"
-                src="/src/assets/Logo.jpg"
+                src={logo}
                 alt="Logo"
               />
             </motion.div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Star, Play } from "lucide-react";
+import hero from '../assets/Hero.jpg'
 
 const Hero = () => {
   return (
@@ -87,7 +88,7 @@ const Hero = () => {
               <div className="absolute -top-4 -left-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-70"></div>
               <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-70"></div>
               <img
-                src="/src/assets/Hero.jpg"
+                src={hero}
                 alt="Hero"
                 className="relative rounded-2xl shadow-2xl"
               />
