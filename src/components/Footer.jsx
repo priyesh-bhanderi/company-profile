@@ -153,20 +153,21 @@ const Footer = () => {
             <p className="text-blue-200 mb-6">
               Stay updated with our latest news and special offers.
             </p>
-            <form className="flex space-x-2">
+            <form className="flex flex-wrap items-center gap-2 w-full">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-blue-900 text-white border border-blue-800 focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                className="flex-1 min-w-0 px-4 py-3 rounded-lg bg-blue-900 text-white border border-blue-800 focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300"
+                className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 whitespace-nowrap"
               >
                 Subscribe
               </motion.button>
             </form>
+
           </div>
         </div>
 

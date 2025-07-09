@@ -9,16 +9,17 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from '../assets/Logo.jpg'
-import { apiFunctions } from "../Api/ApiFunction";
-import API from "../Api/Apis";
+import { apiGet } from '../api/apiClient'
+import API from "../api/endpoints";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [project, setProject] = useState([])
-  const { apiGet } = apiFunctions()
   const { getProjectList } = API
+
+  console.log("project", project);
 
   useEffect(() => {
     const getList = async () => {
