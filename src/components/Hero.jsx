@@ -78,7 +78,7 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          <div className="hidden lg:block w-full lg:w-1/2 px-4">
+          <div className="w-full lg:w-1/2 px-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
